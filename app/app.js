@@ -3,10 +3,10 @@
 (function() {
   'use strict';
 
-  angular.module('uiTest2', [
-    'ui.router'
-  ])
-  .config(function($urlRouterProvider) {
-    $urlRouterProvider.otherwise("/");
+  angular.module('uiTest2', []);
+
+  angular.module('uiTest2')
+  .config(function() {
+
   });
 })();

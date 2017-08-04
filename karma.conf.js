@@ -15,6 +15,12 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      './node_modules/angular/angular.js',                             // angular
+      './node_modules/@uirouter/angularjs/release/angular-ui-router.js', // ui-router
+      './node_modules/angular-mocks/angular-mocks.js',                 // loads our modules for tests
+      './app/services/users/users.js',                                 // our Users factory
+      './app/app.js',                                                  // our angular app
+      './app/services/users/users.spec.js'
     ],
 
 
@@ -64,5 +70,5 @@ module.exports = function(config) {
     // Concurrency level
     // how many browser should be started simultaneous
     concurrency: Infinity
-  });
-};
+  })
+}
